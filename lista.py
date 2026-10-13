@@ -1,0 +1,15 @@
+lista=[1, "ciao", 3.14, [1,5,6], (89,"yup"), {"nome": "Pippo", "cognome": "Elkan"}]
+print(lista[1])
+print(lista[3])
+print(lista[3][1])
+print(lista[5]["cognome"])
+lista.pop()
+print(lista)
+lista.remove(3.14)
+print(lista)
+del lista[0]
+print(lista)
+lista.append("Appeso")
+print(lista)
+lista.insert(2, "bho")
+print(lista)
