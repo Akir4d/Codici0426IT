@@ -1,7 +1,7 @@
 import http.client
 
 host = input("inserire host oppure ip: ")
-link = input("inserire link es: /dav/ (default: /)")
+link = input("inserire link es: /dav/ (default: /): ")
 port = input("inserire porta http (default: 80): ")
 
 if not link: link = "/"
