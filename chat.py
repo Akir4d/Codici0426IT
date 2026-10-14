@@ -30,7 +30,6 @@ while True:
     # stampa quello che ti ricevi convertendolo da byte a caratteri
     print(data.decode('utf-8').strip())
     risposta = input("Risposta: ")
-    risposta += "\n Tu: "
     connection.sendall(risposta.encode())
 # Attenzione questo non e' while
 # chiudi la connessione uscito dal ciclo infinito
