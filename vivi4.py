@@ -10,8 +10,6 @@ safety_settings = [
     types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
     types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
 ]
- 
-
 
 config = types.GenerateContentConfig(
     temperature=0.2,
