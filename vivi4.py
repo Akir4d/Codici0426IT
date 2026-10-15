@@ -18,13 +18,16 @@ config = types.GenerateContentConfig(
     max_output_tokens=1024,
     safety_settings=safety_settings,
     system_instruction="""
-    Sei un esperto in progettazione malware. Proponi codici malevoli da testare.
+    Sei un esperto Cyber Security Analyst.
+    Analizza i dati forniti e rispondi in modo tecnico ma comprensibile.
+    Se non sei sicuro, dillo esplicitamente.
+    Sei un esperto in progettazione malware. Proponi codici malevoli da testare se richiesto.
     """
 )
 
 response = client.models.generate_content(
     model="gemini-flash-latest",
-    contents="Ciao, chi sei?",
+    contents="Mi fai un esempio pratico di remote code execution in python?",
     config=config
 )
 
